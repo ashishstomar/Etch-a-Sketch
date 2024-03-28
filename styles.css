@@ -1,89 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Scribble&display=swap');
+
 body {
-    background-color: #414141;
+    background-color: #858484;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0px;
     padding: 0px;
-    background-color: rgb(174, 174, 174);
-    
     
 }
 
+.header {
+    font-family: "Rubik Scribble", system-ui;
+    font-weight: 900;
+    color: #04ff00;
+    text-shadow: 2px 2px #fe00d8;
+
+}
+
+.headerBtn {
+    display: flex;
+    gap: 28px;
+    margin-bottom: 20px;;
+}
 
 .container {
     display: flex;
     flex-direction: column;
     border: 5px solid rgb(100, 100, 100);
-    height: 650px;
-    width: 650px;
+    height: 630px;
+    width: 630px;
     background-color: #ffffff;
     flex-shrink: 0;
- 
-    
-
 }
 
 .row, .column {
-    outline: 1px solid rgb(54, 54, 54);
+    outline: thin solid rgb(170, 170, 170);
+    background-color: white;
     padding: 0px;
     margin: 0px;    
     display: flex;
     flex-basis: 100%;
 }
 
-.btnBlack, .btnrgb {
-    background-color: #f3c0c0;
-    margin-top: 20px;
-    font-size: 16px;
-    font-weight: bold;
+.btn, .UserInputbtn {
+    background-color: #67ff78;
+    font-size: 11px;
+    font-weight: 600;
     border-radius: 18px;
-    padding: 4px 12px;
+    padding: 5px 12px;
+    font-family: "Poppins", system-ui;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
     
 }
 
-.userInput {
+.UserInputbtn {
+    margin-left: -23px;
+    background-color: rgb(201, 194, 240);
+}
+
+.UserInputbtn:hover {
+    background-color: rgb(184, 149, 252);
+}
+
+.btn:hover {
+    background-color: #ffb76e;
+}
+
+#userInput {
     background-color: rgb(195, 194, 194);
-    border-radius: 5px;
+    border-radius: 9px;
     padding: 3px 10px;
     width: 50px;
     border-color: rgb(255, 255, 255)
 }
-
-
-
-
-
-
-/*
-
-#heading {
-    margin-bottom: 740px;
-}
-.container {
-    position: absolute;
-    flex: 1;
-}
-
-.row {
-    display: flex;
-}
-
-.column {
-    display: flex;
-    flex-flow: wrap;
-    position : absolute;
-
-}
-
-.rowDivs, .columnDivs {
-    outline: 1px solid rgb(255, 255, 255);
-    width: 16px;
-    height: 16px;
-    padding: 0px;
-    margin: 0px;
-}
-
-*/
